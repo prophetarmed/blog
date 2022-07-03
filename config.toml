@@ -1,0 +1,4 @@
+baseURL = 'https://inalone.neocities.org/'
+languageCode = 'en-us'
+title = 'inalone blog'
+theme = "inalone"
