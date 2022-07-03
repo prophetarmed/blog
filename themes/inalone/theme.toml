@@ -2,10 +2,10 @@
 # See https://github.com/gohugoio/hugoThemes#themetoml for an example
 
 name = "Inalone"
-license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+license = "GPL-3.0"
+licenselink = "https://www.gnu.org/licenses/gpl-3.0.en.html"
 description = ""
-homepage = "http://example.com/"
+homepage = "https://inalone.neocities.org"
 tags = []
 features = []
 min_version = "0.41.0"
@@ -13,9 +13,3 @@ min_version = "0.41.0"
 [author]
   name = "inalone"
   homepage = "https://inalone.neocities.org"
-
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""
