@@ -9,7 +9,7 @@
 {{ with .Params.tags }}
 <h4>Tag:
     {{ range . }}
-    <a href="{{ " tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>
+    <a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}'>{{ . }}</a>
     {{ end }}
 </h4>
 {{ end }}
