@@ -18,7 +18,7 @@ So why do I keep trying? No that's not a weirdly depressing stream-of-conscious,
 start this blog up because I:
 - Believe in an internet separate from unnecessarily bloaty SPAs - free from badly written, and even
 worse, client-side JavaScript
-- I need a personal outlet.
+- Need a personal outlet.
 
 I lack motivation to do things unless I codify them in some way, or am able to express them in some 
 way. I listen to the most music when I feel involved in certain online communities for small periods
