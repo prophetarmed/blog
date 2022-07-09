@@ -1,0 +1,30 @@
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+  HUGO_ENV: production
+
+hugo:
+  image: registry.gitlab.com/pages/hugo/hugo_extended:latest
+  before_script:
+    - apk add --update --no-cache git go
+    - git submodule update --init --recursive
+    - hugo mod init gitlab.com/inalone/blog
+  script:
+  - hugo
+  artifacts:
+    paths:
+    - public
+  rules:
+  - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
+neocities:
+  image: ruby:2.6.5
+  before_script:
+    - gem install bundler
+    - bundle install
+  neocities:
+    stage: deploy
+    environment: neocities
+    script:
+      - if [ -z "$NEOCITIES_API_TOKEN" ]; then echo Please see README.md for information on how to set your Neocities API token && false; else mkdir -p $HOME/.config/neocities && mv $NEOCITIES_TOKEN $HOME/.config/neocities/config; fi
+      - cd public
+      - bundle exec neocities push .
