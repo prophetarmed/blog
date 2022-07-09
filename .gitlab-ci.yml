@@ -18,13 +18,13 @@ hugo:
 
 neocities:
   image: ruby:2.6.5
+  stage: deploy
+  environment: neocities
+
   before_script:
     - gem install bundler
     - bundle install
-  neocities:
-    stage: deploy
-    environment: neocities
-    script:
-      - if [ -z "$NEOCITIES_API_TOKEN" ]; then echo Please see README.md for information on how to set your Neocities API token && false; else mkdir -p $HOME/.config/neocities && mv $NEOCITIES_TOKEN $HOME/.config/neocities/config; fi
-      - cd public
-      - bundle exec neocities push .
+  script:
+    - if [ -z "$NEOCITIES_API_TOKEN" ]; then echo Please see README.md for information on how to set your Neocities API token && false; else mkdir -p $HOME/.config/neocities && mv $NEOCITIES_TOKEN $HOME/.config/neocities/config; fi
+    - cd public
+    - bundle exec neocities push .
