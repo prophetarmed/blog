@@ -25,6 +25,6 @@ neocities:
     - gem install bundler
     - bundle install
   script:
-    - if [ -z "$NEOCITIES_API_TOKEN" ]; then echo Please see README.md for information on how to set your Neocities API token && false; else mkdir -p $HOME/.config/neocities && mv $NEOCITIES_TOKEN $HOME/.config/neocities/config; fi
+    - if [ -z "$NEOCITIES_API_KEY" ]; then echo Please see README.md for information on how to set your Neocities API token && false; else mkdir -p $HOME/.config/neocities && mv $NEOCITIES_TOKEN $HOME/.config/neocities/config; fi
     - cd public
     - bundle exec neocities push .
