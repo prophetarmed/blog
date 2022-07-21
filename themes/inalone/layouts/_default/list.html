@@ -3,9 +3,7 @@
 {{ range .Pages }}
 <article>
   <h3><a class="title" href="{{ .Permalink }}">{{ .Title }}</a></h3>
-  <a class="summary" href="{{ .Permalink }}">
-    <p>{{ .Summary }}</p>
-  </a>
+  <p>{{ .Summary }}</p>
 </article>
 {{ end }}
 {{ end }}
