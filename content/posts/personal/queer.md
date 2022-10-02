@@ -2,6 +2,7 @@
 title: "Queer"
 date: 2022-10-02T20:19:27+01:00
 draft: false
+tags: ["personal"]
 ---
 
 Queer is a loaded word that will have a different, but clear first assumption to people who see it in isolation. You may think of a queer friend of yours, you may think of pride parades, you may think of queer culture staples such as Drag Race or queer musical artists. It's a word that's intentionally vague yet simultaneously extremely powerful and loaded.
