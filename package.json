@@ -6,6 +6,7 @@
   "author": "inalone <me@inal.one>",
   "license": "GPL-3.0",
 	"scripts": {
+		"build": "eleventy",
 		"dev": "eleventy --serve --port=3000"
 	},
   "devDependencies": {
