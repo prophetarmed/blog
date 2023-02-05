@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Set Node.js 
+      - name: Set Node.js
         uses: actions/setup-node@v3
         with:
           node-version: latest
@@ -24,7 +24,7 @@ jobs:
       - name: Run install
         uses: borales/actions-yarn@v4
         with:
-          cmd: install 
+          cmd: install
 
       - name: Run build
         uses: borales/actions-yarn@v4
