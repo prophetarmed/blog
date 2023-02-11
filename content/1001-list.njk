@@ -10,16 +10,20 @@ title: 1001 Albums Log
 <p>"Times Listened" denotes the amount of plays with the intention of this list in mind, rather than just casual listens. I will try and listen to an album 3 times before writing the review.</p>
 
 <table class="full-width">
-	<tr>
-		<th>Entry</th>
-		<th>Times Listened</th>
-		<th>Review</th>
-	</tr>
-	{%- for entry in 1001list -%}
-	<tr>
-		<td>{{ entry.name }}</td>
-		<td>{{ entry.timesListened }}</td>
-		<td>{{ entry.review }}</td>
-	</tr>
-	{%- endfor -%}
+	<thead>
+		<tr>
+			<th>Entry</th>
+			<th>Times Listened</th>
+			<th>Review</th>
+		</tr>
+	</thead>
+	<tbody>
+		{%- for entry in 1001list -%}
+			<tr>
+				<td>{{ entry.name }}</td>
+				<td>{{ entry.timesListened }}</td>
+				<td>{{ entry.review }}</td>
+			</tr>
+		{%- endfor -%}
+	</tbody>
 </table>
