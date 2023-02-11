@@ -1,0 +1,53 @@
+---
+layout: base.njk
+title: Recipes
+---
+
+<script>
+	function showOrHide(id) {
+		const buttonElement = document.getElementById(`${id}-button`);
+		const contentElement = document.getElementById(`${id}-content`);
+		
+		buttonElement.textContent = (buttonElement.textContent === "Show") ? "Hide" : "Show";
+		contentElement.style.display = (contentElement.style.display === "none") ? "block" : "none";
+	}
+</script>
+
+<h1>Recipes</h1>
+<p>Below are the recipes I have made and liked. They are all 100% vegan, any other dietary requirement I have not considered as I don't have it.</p>
+
+<ul class="no-style">
+{%- for entry in recipes -%}
+	<li>
+		<h3>{{ entry.name	}}</h3>
+		<p>Time to make: {{ entry.timeToMake }} minutes</p>
+		<button id="{{ loop.index }}-button" onclick="showOrHide({{ loop.index }})">Show</button>
+		<div id="{{ loop.index }}-content" style="display: none">
+			<table class="half-width margin-auto">
+				<thead>
+					<tr>
+						<th>Ingredients</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<ul>
+								{%- for ingredient in entry.ingredients -%}
+									<li class="ta-left">{{ ingredient }}</li>
+								{%- endfor -%}
+							</ul>
+						</td>
+						<td>
+							<p>{{ entry.description | safe }}</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</li>
+
+	<hr class="half-width" />
+{%- endfor -%}
+</ul>
