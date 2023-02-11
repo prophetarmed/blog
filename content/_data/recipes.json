@@ -1,8 +1,8 @@
 [
 	{
-		"name": "Test 123",
-		"description": "This is how you do it lol <strong>wow</strong>",
-		"timeToMake": 60,
-		"ingredients": ["1x thing", "250ml thing"]
+		"name": "Roast Sweet Potato",
+		"description": "Poke 'em with a fork, line a baking tray, bake 'em at 220C for 40-50 minutes.",
+		"ingredients": ["Sweet potatoes"],
+		"timeToMake": 45
 	}
 ]
