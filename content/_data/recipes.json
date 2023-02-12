@@ -1,5 +1,11 @@
 [
 	{
+		"name": "Good Ass Salad",
+		"description": "Cut 'em, throw 'em in, drown it in balsamic vinaigrette (see other recipe). Make vinaigrette and feta the day before for ease :). <a href=\"https://jessicainthekitchen.com/15-minute-mediterranean-chickpea-salad-meal-prep/\">source</a>",
+		"ingredients": ["Can of chickpeas", "Tomatoes (cherry or salad)", "Half a large onion (preferably red)", "1 cucumber", "Vegan feta (see other recipe)"],
+		"timeToMake": 20
+	}
+	{
 		"name": "Roast Sweet Potato",
 		"description": "Poke 'em with a fork, line a baking tray, bake 'em at 220C for 40-50 minutes.",
 		"ingredients": ["Sweet potatoes"],
