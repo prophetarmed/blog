@@ -1,14 +1,25 @@
 [
 	{
+		"name": "Balsamic vinaigrette",
+		"description": "Mix together ingredients in a mason jar and leave overnight.",
+		"ingredients": ["60ml olive oil", "1 tablespoon balsamic vinegar", "Juice of half a lemon", "1 teaspoon dijon mustard", "Salt and pepper"],
+		"timeToMake": 10
+	},
+	{
 		"name": "Good Ass Salad",
 		"description": "Cut 'em, throw 'em in, drown it in balsamic vinaigrette (see other recipe). Make vinaigrette and feta the day before for ease :). <a href=\"https://jessicainthekitchen.com/15-minute-mediterranean-chickpea-salad-meal-prep/\">source</a>",
 		"ingredients": ["Can of chickpeas", "Tomatoes (cherry or salad)", "Half a large onion (preferably red)", "1 cucumber", "Vegan feta (see other recipe)"],
 		"timeToMake": 20
-	}
+	},
 	{
 		"name": "Roast Sweet Potato",
 		"description": "Poke 'em with a fork, line a baking tray, bake 'em at 220C for 40-50 minutes.",
 		"ingredients": ["Sweet potatoes"],
 		"timeToMake": 45
-	}
+	},
+	{
+		"name": "Vegan feta",
+		"description": "Mix the marinade together in a mason jar, throw in the block of tofu, toss the mason jar (physically, not in the bin), leave overnight to marinade.",
+		"ingredients": ["Block of tofu, pressed and cubed/crumbled", "1 tablespoon nutritional yeast", "Salt and pepper", "Juice of half a lemon", "3 tablespoons olive oil"],
+		"timeToMake": 10
 ]
