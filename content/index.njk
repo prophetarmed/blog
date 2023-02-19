@@ -9,15 +9,13 @@ eleventyNavigation:
 <h1>inalone</h1>
 This is highly WIP
 
-{#
 <h2>blog entries:</h2>
-<ul class="inline">
+<ul class="inline no-style">
 	<li><a href="/blog/tag/post">all</a></li>
 	{% for tag in collections.tagList %}
 		<li><a href="/blog/tag/{{ tag }}">{{ tag }}</a></li>
 	{% endfor %}
 </ul>
-#}
 
 <h2>various:</h2>
 <ul class="inline no-style">
