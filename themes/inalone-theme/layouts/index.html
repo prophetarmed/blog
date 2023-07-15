@@ -2,16 +2,9 @@
 
 <h3>Recent Posts</h3>
 <ul>
-  {{ range (where .Site.Pages.ByDate "Type" "posts") }} {{ range .Pages }}
+  {{ range first 3 (where .Site.Pages.ByDate "Type" "posts") }} {{ range .Pages }}
   <li>
-    <article>
-      <h4><a href="{{.Permalink}}">{{.Title}}</a></h4>
-      <p>{{ .Date | time.Format ":date_full" }}</p>
-      <p>{{ .Summary }}</p>
-      {{ if .Truncated }}
-      <a href="{{ .Permalink }}">Read More…</a>
-      {{ end }}
-    </article>
+	  {{ partial "post-preview.html" . }}
   </li>
   {{ end }} {{end}}
 </ul>
