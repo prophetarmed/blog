@@ -16,24 +16,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Set Node.js
-        uses: actions/setup-node@v3
+      - uses: jakejarvis/hugo-build-action@master
         with:
-          node-version: latest
-
-      - name: Run install
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: install
-
-      - name: Run build
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: build
+          args: --minify
 
       - name: Deploy to neocities
         uses: bcomnes/deploy-to-neocities@v1
         with:
           api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
           cleanup: false
-          dist_dir: ./_site
+          dist_dir: ./public
