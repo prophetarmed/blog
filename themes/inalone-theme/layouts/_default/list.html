@@ -1,9 +1,7 @@
 {{ define "main" }}
-            <h1>{{ .Title }}</h1>
-            {{ .Content }}
-            <ul>
-            {{ range .Pages }}
-	  {{ partial "post-preview.html" . }}
-            {{ end }}
-            </ul>
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+<ul>
+  {{ range .Pages }} {{ partial "post-preview.html" . }} {{ end }}
+</ul>
 {{ end }}

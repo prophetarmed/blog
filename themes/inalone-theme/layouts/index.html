@@ -2,10 +2,9 @@
 
 <h3>Recent Posts</h3>
 <ul>
-  {{ range first 3 (where .Site.Pages.ByDate "Type" "posts") }} {{ range .Pages }}
-  <li>
-	  {{ partial "post-preview.html" . }}
-  </li>
+  {{ range first 3 (where .Site.Pages.ByDate "Type" "posts") }} {{ range .Pages
+  }}
+  <li>{{ partial "post-preview.html" . }}</li>
   {{ end }} {{end}}
 </ul>
 

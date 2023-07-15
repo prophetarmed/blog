@@ -1,7 +1,7 @@
 ---
 title: "You Dont Need Waybar"
 date: 2023-02-19T12:00:00+01:00
-draft: false 
+draft: false
 categories: ["Computers"]
 tags: ["Linux"]
 ---

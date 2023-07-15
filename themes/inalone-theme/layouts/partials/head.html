@@ -1,4 +1,10 @@
-<title>{{ if not .IsHome }}{{ with .Title }}{{ . }} | {{ end }}{{ end }}{{ .Site.Title }}</title>  
+<title>
+  {{ if not .IsHome }}{{ with .Title }}{{ . }} | {{ end }}{{ end }}{{
+  .Site.Title }}
+</title>
 <link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
-<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . }}{{ else }}{{ .Site.Params.description }}{{end }}{{ end }}">  
+<meta
+  name="description"
+  content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . }}{{ else }}{{ .Site.Params.description }}{{end }}{{ end }}"
+/>
 <link rel="canonical" href="{{ .Permalink }}" />
