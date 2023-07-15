@@ -1,0 +1,4 @@
+baseURL = 'https://inal.one'
+languageCode = 'en-gb'
+title = 'inalone blog'
+theme = 'inalone-theme'
