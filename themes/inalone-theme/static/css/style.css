@@ -1,3 +1,27 @@
+/* for debugging layout */
+/*
+* {
+	border: 1px solid;
+}
+*/
+
 body {
-	background-color: #abc123;
+	max-width: 1250px;
+	margin: 8px auto;
+}
+
+header {
+	border: 1px solid;
+	border-bottom: 0;
+}
+
+#content {
+	border: 1px solid;
+}
+
+/* header */ 
+.header-text {
+	text-decoration: none;
+	font-size: 3rem;
+	color: #acb123;
 }
