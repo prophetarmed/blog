@@ -3,6 +3,6 @@
   <p>{{ .Date | time.Format ":date_full" }}</p>
   <p>{{ .Summary }}</p>
   {{ if .Truncated }}
-  <a href="{{ .Permalink }}">Read More…</a>
+  <a href="{{ .Permalink }}">Read More...</a>
   {{ end }}
 </article>
