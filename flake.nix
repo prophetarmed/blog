@@ -16,6 +16,8 @@
         {
 	  buildInputs = with pkgs; [
 	    hugo
+	    nodePackages.vscode-langservers-extracted
+	    nodePackages.prettier
 	  ];
 	};
   };
