@@ -15,6 +15,15 @@ header {
   border-bottom: 0;
 }
 
+table,th,td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+td {
+	padding: 3px;
+}
+
 #content {
   border: 1px solid;
   display: flex;
