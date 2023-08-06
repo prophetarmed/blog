@@ -45,6 +45,7 @@ td {
 /* navbar */
 .navbar {
   border-right: 1px solid;
+  width: 8em;
 }
 
 .navbar_list {
