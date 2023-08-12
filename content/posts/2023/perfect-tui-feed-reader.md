@@ -14,7 +14,7 @@ TUI-based browsers have been around pretty much since the inception of the inter
 
 Anyone who has used Firefox in the past few years will likely know about its 'Reader Mode'. Safari I believe has something similar, but ultimately it's a button which presents to you a webpage with all of the BS removed - it gives you a title, the authors and other important information and then the actual content. What you might not know is that Firefox's implementation of this, Readability, is a fully free-standing NPM module that you can integrate into any JS application. This resulted in the creation of readability-cli - a command-line tool that takes in a web address and spits out the simple Readability DOM in stdout. Unforunately, in order to run the `readable.ts` file you have to be in the directory in which you cloned readability-cli, meaning I had to make this very simple shell script which changes directory and then passes the URL:
 
-```
+```sh
 #!/bin/bash
 cd ~/.src/readability-cli
 ./readable.ts -q "$1"
@@ -23,7 +23,7 @@ cd - > /dev/null
 
 And now if I run `./readable` in my terminal with a URL, I get its simple DOM in my terminal! This means I can do a test run with a Guardian article and pipe it into Lynx and see how it looks.
 
-```
+```sh
 readable https://www.theguardian.com/commentisfree/2023/may/30/tories-disabled-people-benefits | lynx --stdin
 ```
 

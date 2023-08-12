@@ -1,8 +1,0 @@
-<article>
-  <h4><a href="{{.Permalink}}">{{.Title}}</a></h4>
-  <p>{{ .Date | time.Format ":date_full" }}</p>
-  <p>{{ .Summary }}</p>
-  {{ if .Truncated }}
-  <a href="{{ .Permalink }}">Read More...</a>
-  {{ end }}
-</article>
