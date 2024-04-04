@@ -35,7 +35,7 @@ enableRobotsTXT = true
     name = 'Computers'
     pageRef = '/categories/computers'
     weight = 10
-# [[menus.main]]
-#     name = 'Services'
-#     pageRef = '/services'
-#     weight = 20
+[[menus.main]]
+    name = 'Music Lists'
+    pageRef = '/categories/lists'
+    weight = 10
